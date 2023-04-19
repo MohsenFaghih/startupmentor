@@ -1,25 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import bg from './assets/img/startupMentor_bg.png';
+import Header from './components/Header/Header';
+import { Root } from './app-styled';
+import WelcomeMsg from './components/WelcomeMsg/WelcomeMsg';
+import Youtube from './components/Youtube/Youtube';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Root bg={bg} className="App">
+      <Header />
+      <main>
+        <WelcomeMsg />
+        <Youtube YoutubeLink={'Ph7WoHnVDrM'} />
+      </main>
+      <footer>
+
+      </footer>
+    </Root>
   );
 }
 
