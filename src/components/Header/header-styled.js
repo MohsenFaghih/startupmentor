@@ -120,6 +120,10 @@ export const HeaderRoot = styled.header`
                 
                 svg{ width: 0; }
                 span{ font-size: 2rem; }
+
+                @media screen and (max-width: 650px){
+                    span{ font-size: 1.1rem; }
+                }
             }
         }
     }
